@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blackjack Challenge</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Blackjack Challenge</h1>
+
+        <div class="flex-box">
+            <h2 class="col" style="color: purple;">**<span id="blackjack-result">Let's Play</span>**</h2>
+
+            <div class="row flex-box" id="blackjack-playarea">
+
+                <div class="col" id="your-box">
+                    <h3>You:
+                        <span id="your-score">0</span>
+                    </h3>
+                </div>
+
+
+                <div class="col" id="dealer-box">
+                    <h3>Dealer:
+                        <span id="dealer-score">0</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="row flex-box" id="blackjack-actions">
+                <div class="col-6">
+                    <button class="btn-lg btn-primary" id="blackjack-hit">Hit</button>
+                    <button class="btn-lg btn-warning" id="blackjack-stand">Stand</button>
+                    <button class="btn-lg btn-danger" id="blackjack-deal">Deal</button>
+                </div>
+                <div class="col offset-2">
+                    <table>
+                        <tr>
+                            <thead>
+                                <th>Wins</th>
+                                <th>Losses</th>
+                                <th>Draws</th>
+                            </thead>
+                        </tr>
+                        <tr>
+                            <tbody>
+                                <td id="blackjack-wins">0</td>
+                                <td id="blackjack-losses">0</td>
+                                <td id="blackjack-draws">0</td>
+                            </tbody>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
